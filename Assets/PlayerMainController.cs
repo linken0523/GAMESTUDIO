@@ -5,17 +5,56 @@ using UnityEngine;
 public class PlayerMainController : MonoBehaviour
 {
     public InventoryObject inventory;
+    /////////////////////////Controllers//////////////////////
+    private PlayerMoveController PlayerMove;
+    private PlayerAnimationController PlayerAnimation;
+
+    ////////////////////////Public Attributes/////////////////////
     public float moveSpeed;
+    public float jumpForce;
     // Start is called before the first frame update
     void Start()
     {
-        
+        PlayerMove = this.GetComponent<PlayerMoveController>();
+        PlayerAnimation = this.GetComponent<PlayerAnimationController>();
     }
 
     // Update is called once per frame
     void Update()
-    {
-        move(moveSpeed);
+    {   
+        bool moved, jumped, ran;//for animation
+        if (PlayerMove != null)
+            {   
+                // check input arrow keys and space bar
+                if(Input.GetKey(KeyCode.LeftShift)){
+                    moved = PlayerMove.move(2*moveSpeed);
+                    ran=true;
+                }else{
+                    moved = PlayerMove.move(moveSpeed);
+                    ran=false;
+                }
+                jumped = PlayerMove.jump(jumpForce);
+            }
+        else { moved = false; jumped = false; ran=false;}
+        ////Animations//////////////
+        // if player has animation, do animation, based on what action player has done
+            if (PlayerAnimation != null)
+            {    
+                if (moved) { 
+                    if(ran){
+                        PlayerAnimation.IdleToRun(); 
+                        
+                    }else{
+                    PlayerAnimation.IdleToMove(); 
+                    PlayerAnimation.RunToIdle();
+                    }
+                }
+                else { PlayerAnimation.MoveToIdle(); 
+                        PlayerAnimation.RunToIdle();}
+
+                if (jumped) { PlayerAnimation.ToJump(); }
+                else { PlayerAnimation.AfterJump(); }
+            } 
     }
 
     public void OnTriggerEnter(Collider other){
@@ -28,32 +67,5 @@ public class PlayerMainController : MonoBehaviour
     private void OnApplicationQuit(){
         inventory.Container.Clear();
     }
-    public bool move(float Speed)
-    {
-       if (Input.GetKey(KeyCode.W)
-           || Input.GetKey(KeyCode.S)
-           || Input.GetKey(KeyCode.A)
-           || Input.GetKey(KeyCode.D))
-        {
-            Vector3 playerMovement = new Vector3(0f, 0f, 0f) ;
-        
-            if(Input.GetKey(KeyCode.W)){
-                playerMovement += new Vector3(0f, 0f, 1f);
-            }
-            if(Input.GetKey(KeyCode.S)){
-                playerMovement += new Vector3(0f, 0f, -1f);
-            }
-            if(Input.GetKey(KeyCode.D)){
-                playerMovement += new Vector3(1f, 0f, 0f);
-            }
-            if(Input.GetKey(KeyCode.A)){
-                playerMovement += new Vector3(-1f, 0f, 0f);
-            }
-
-            transform.Translate(playerMovement.normalized * Speed * Time.deltaTime);
-            return true;
-        }else{
-            return false;
-        }
-    }
+    
 }
