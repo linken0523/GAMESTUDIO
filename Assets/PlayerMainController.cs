@@ -57,11 +57,14 @@ public class PlayerMainController : MonoBehaviour
             } 
     }
 
-    public void OnTriggerEnter(Collider other){
+    public void OnTriggerStay(Collider other){
         var item = other.GetComponent<Item>();
         if(item){
-            inventory.AddItem(item.item, 1);
-            Destroy(other.gameObject);
+            if(Input.GetKey(KeyCode.Q)){
+                inventory.AddItem(item.item, 1);
+                Destroy(other.gameObject);
+            }
+            
         }
     }
     private void OnApplicationQuit(){

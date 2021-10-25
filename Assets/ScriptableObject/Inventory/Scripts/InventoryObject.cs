@@ -12,13 +12,18 @@ public class InventoryObject : ScriptableObject
             if(Container[i].item == _item){
                 Container[i].addAmount(_amount);
                 hasItem = true;
+                if(Container[i].amount<=0){
+                    Container.RemoveAt(i);
+                }
                 break;
             }
         }
         if(!hasItem){
             Container.Add(new InventorySlot(_item, _amount));
         }
+        
     }
+
 }
 [System.Serializable]
 public class InventorySlot{
