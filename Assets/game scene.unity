@@ -1878,7 +1878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce1df868efa1fa14597ba75eab632893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ProjectileTemplate: {fileID: 561359210841600743, guid: 9801c5f12ace34049b18a0c74ad1ca5a,
+  ProjectileTemplate: {fileID: 2982512293571263295, guid: 8fd3bae45f290c14789f83c5ce885b57,
     type: 3}
   shootSound: {fileID: 0}
 --- !u!1 &2119515297

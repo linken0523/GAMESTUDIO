@@ -15,7 +15,7 @@ public class ProjectileManager : MonoBehaviour {
     }
     void Update() 
     {
-        this.transform.Translate(speed/10 * velocity);
+        this.transform.position+=(speed/10 * velocity);
         projectileDestroy();
     }
     

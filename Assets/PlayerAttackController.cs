@@ -49,7 +49,7 @@ public class PlayerAttackController : MonoBehaviour
 
             // instantiate projectile
             Vector3 bulletInsPos = transform.position + Vector3.up;
-            GameObject bullet = Instantiate(ProjectileTemplate, bulletInsPos , Quaternion.identity);
+            GameObject bullet = Instantiate(ProjectileTemplate, bulletInsPos , transform.rotation);
             ProjectileManager bulletManage = bullet.gameObject.GetComponent<ProjectileManager>();
             bulletManage.setVelocity(dir);
             bulletManage.setDamage(attackDamage);
