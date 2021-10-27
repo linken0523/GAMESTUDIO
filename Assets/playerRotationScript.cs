@@ -18,7 +18,7 @@ public class playerRotationScript : MonoBehaviour
     private float facingNW; // left + up
     private float rotation;
 
-    private float rotateSpeed = 5f;
+    private float rotateSpeed = 8f;
     // Start is called before the first frame update
     public GameObject parent;
     void Start()

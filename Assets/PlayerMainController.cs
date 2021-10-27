@@ -7,6 +7,7 @@ public class PlayerMainController : MonoBehaviour
     public InventoryObject inventory;
     /////////////////////////Controllers//////////////////////
     private PlayerMoveController PlayerMove;
+    private PlayerAttackController PlayerAttack;
     private PlayerAnimationController PlayerAnimation;
 
     ////////////////////////Public Attributes/////////////////////
@@ -16,6 +17,7 @@ public class PlayerMainController : MonoBehaviour
     void Start()
     {
         PlayerMove = this.GetComponent<PlayerMoveController>();
+        PlayerAttack = this.GetComponent<PlayerAttackController>();
         PlayerAnimation = this.GetComponent<PlayerAnimationController>();
     }
 
@@ -55,6 +57,8 @@ public class PlayerMainController : MonoBehaviour
                 if (jumped) { PlayerAnimation.ToJump(); }
                 else { PlayerAnimation.AfterJump(); }
             } 
+        if (PlayerAttack != null)
+            {PlayerAttack.attack(0f, 0f ,0f); }
     }
 
     public void OnTriggerStay(Collider other){
