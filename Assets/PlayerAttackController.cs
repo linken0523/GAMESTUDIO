@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using General;
 
 public class PlayerAttackController : MonoBehaviour
 {   /*
@@ -14,7 +15,7 @@ public class PlayerAttackController : MonoBehaviour
        - setDistanceToPlayer()
     */
     public GameObject ProjectileTemplate;
-
+    private HandyCoolDown AttackCoolDown;
 
 
     private bool hasAttacked;
@@ -22,7 +23,7 @@ public class PlayerAttackController : MonoBehaviour
 
     void Start() {
         hasAttacked = false;
-        
+        AttackCoolDown = null;
     }
 
     public bool attack(float attackRange, float attackDamage,float AttackCoolDownTime)
@@ -53,8 +54,9 @@ public class PlayerAttackController : MonoBehaviour
             ProjectileManager bulletManage = bullet.gameObject.GetComponent<ProjectileManager>();
             bulletManage.setVelocity(dir);
             bulletManage.setDamage(attackDamage);
+            // set cool down, control player attack rate
             
-            
+            AttackCoolDown = new HandyCoolDown(AttackCoolDownTime, "Player Attack Cool Down");
             if (shootSound != null) 
             {
                 AudioSource.PlayClipAtPoint(shootSound, transform.position);
@@ -63,6 +65,16 @@ public class PlayerAttackController : MonoBehaviour
         } else {hasAttacked = false; } // player did not press A
 
         return hasAttacked;
+    }
+    void Update() {
+        // UPDATE() IS FOR COOL DOWN ONLY!!!
+        if (AttackCoolDown != null)
+        {   
+            bool done = AttackCoolDown.check();
+            if (done) {
+                AttackCoolDown = null;
+            }
+        }
     }
 }
 

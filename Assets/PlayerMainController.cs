@@ -12,6 +12,8 @@ public class PlayerMainController : MonoBehaviour
 
     ////////////////////////Public Attributes/////////////////////
     public float moveSpeed;
+    public float health;
+    public float AttackCoolDownTime;
     public float jumpForce;
     // Start is called before the first frame update
     void Start()
@@ -24,7 +26,7 @@ public class PlayerMainController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
-        bool moved, jumped, ran;//for animation
+        bool attacked, moved, jumped, ran;//for animation
         if (PlayerMove != null)
             {   
                 // check input arrow keys and space bar
@@ -58,7 +60,7 @@ public class PlayerMainController : MonoBehaviour
                 else { PlayerAnimation.AfterJump(); }
             } 
         if (PlayerAttack != null)
-            {PlayerAttack.attack(0f, 0f ,0f); }
+            {attacked = PlayerAttack.attack(0.0f, 1.0f, AttackCoolDownTime); }
     }
 
     public void OnTriggerStay(Collider other){
@@ -74,5 +76,21 @@ public class PlayerMainController : MonoBehaviour
     private void OnApplicationQuit(){
         inventory.Container.Clear();
     }
-    
+    /*
+    public void playerIsDamaged(float damage)
+    {   // on enemy damage:
+        // minus health, knock back, damage animation...
+        // 1. minus health
+        if (damage > health) { health = 0; }
+        else 
+        { 
+            //gameObject.GetComponent<TimeStop>().StopTime();
+            health -= damage;
+            PlayerDamageManage.damageEffect();
+        }
+        // print("Player is damaged. Remaining HP: "+health.ToString());
+        // 2. damage animation
+        if ( PlayerAnimation != null) { PlayerAnimation.TakeDamage(); }
+        // 3. health UI
+    }*/
 }

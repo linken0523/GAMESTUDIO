@@ -86,6 +86,15 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\ScriptableObject\Items\New Folder\Scripts\EquipmentObject.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+     <Compile Include="Assets\General.cs" />
+     <Compile Include="Assets\Scripts\General.cs" />
+     <Compile Include="Assets\EnemyMainController.cs" />
+     <Compile Include="Assets\EnemyAttackController.cs" />
+     <Compile Include="Assets\EnemyAnimationController.cs" />
+     <Compile Include="Assets\EnemyDeathController.cs" />
+     <Compile Include="Assets\EnemyMoveController.cs" />
+     <Compile Include="Assets\EnemyDamageManage.cs" />
+     <Compile Include="Assets\EnemyMeleeAttackLogic.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
