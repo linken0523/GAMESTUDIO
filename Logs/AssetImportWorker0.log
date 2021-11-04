@@ -15,11 +15,11 @@ C:/Users/Zelin/Desktop/GameStudio/GAMESTUDIO
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59233
+59401
 Successfully changed project path to: C:/Users/Zelin/Desktop/GameStudio/GAMESTUDIO
 C:/Users/Zelin/Desktop/GameStudio/GAMESTUDIO
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 38.52 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 38.36 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.22f1 (a137e5fb0427)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.22f1/Editor/Data/Resources/UnitySubsystems
@@ -35,72 +35,72 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.22f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.22f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56912
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56540
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002977 seconds.
+Registered in 0.003368 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 40.79 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 44.65 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.932 seconds
+- Completed reload, in  1.933 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1932ms)
+	ReloadAssembly (1933ms)
 		BeginReloadAssembly (89ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (535ms)
+		EndReloadAssembly (528ms)
 			LoadAssemblies (85ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (211ms)
+			SetupTypeCache (210ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (216ms)
+			SetupLoadedEditorAssemblies (222ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (41ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (122ms)
-				ProcessInitializeOnLoadMethodAttributes (43ms)
+				RefreshPlugins (45ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (126ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004682 seconds.
+Registered in 0.005021 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.244 seconds
+- Completed reload, in  1.318 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1245ms)
-		BeginReloadAssembly (192ms)
+	ReloadAssembly (1319ms)
+		BeginReloadAssembly (226ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (970ms)
-			LoadAssemblies (123ms)
+		EndReloadAssembly (1006ms)
+			LoadAssemblies (126ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (356ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (339ms)
+			SetupTypeCache (385ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (343ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (61ms)
-				ProcessInitializeOnLoadAttributes (253ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (244ms)
 				ProcessInitializeOnLoadMethodAttributes (5ms)
 				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
@@ -109,15 +109,15 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1478 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 84.0 MB.
 System memory in use after: 84.1 MB.
 
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1949.
-Total: 3.319700 ms (FindLiveObjects: 0.193200 ms CreateObjectMapping: 0.112300 ms MarkObjects: 2.906400 ms  DeleteObjects: 0.089600 ms)
+Total: 3.524600 ms (FindLiveObjects: 0.210300 ms CreateObjectMapping: 0.130200 ms MarkObjects: 3.068200 ms  DeleteObjects: 0.114700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,255 +131,252 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/M_CharacterModel/Enemysolder1/Animation
-  artifactKey: Guid(babc47472019fe74c8f43d63e416d14b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_CharacterModel/Enemysolder1/Animation using Guid(babc47472019fe74c8f43d63e416d14b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bec782aa5adeca9a10048c6cc8696d4') in 0.011363 seconds 
+  path: Assets/M_CharacterModel/Enemysolder1/Material/pants_Metallic.png
+  artifactKey: Guid(2b26f8bb2dfe3464a9c9936a1f248546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/pants_Metallic.png using Guid(2b26f8bb2dfe3464a9c9936a1f248546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd92b7d4e2811d218f492f97022607f92') in 0.102249 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000296 seconds.
-  path: Assets/M_CharacterModel/Enemysolder1/Animation/Walking.fbx
-  artifactKey: Guid(b8039206185861f4195014748adffdbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_CharacterModel/Enemysolder1/Animation/Walking.fbx using Guid(b8039206185861f4195014748adffdbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26ccb1c8aac6fea29b94d69d02c4d0ed') in 0.062205 seconds 
+  Time since last request: 0.000324 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/pants_Normal_OpenGL.png
+  artifactKey: Guid(bb998eac22bbc2c4eb473254ac39d298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/pants_Normal_OpenGL.png using Guid(bb998eac22bbc2c4eb473254ac39d298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ce02472b9f5d7e39f148fb9931683bd') in 0.055057 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/M_CharacterModel/Enemysolder1/Animation/Die.fbx
-  artifactKey: Guid(abe8138f2e21305419df14d43eeb26ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_CharacterModel/Enemysolder1/Animation/Die.fbx using Guid(abe8138f2e21305419df14d43eeb26ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6053c5242c5a3cccd90de928d3242a0') in 0.011510 seconds 
+  Time since last request: 0.000302 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/pants_Normal.png
+  artifactKey: Guid(79bc4c0d1959fb948988677dd569fa13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/pants_Normal.png using Guid(79bc4c0d1959fb948988677dd569fa13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b71b548f4fde5791268ddee3679d7a11') in 0.021759 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000282 seconds.
-  path: Assets/M_CharacterModel/Enemysolder1/Animation/Bouncing Fight Idle.fbx
-  artifactKey: Guid(3fc11a78103f63a4ab16e708ed71ed63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_CharacterModel/Enemysolder1/Animation/Bouncing Fight Idle.fbx using Guid(3fc11a78103f63a4ab16e708ed71ed63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53866c69b2be406cbaae2d94df1e4607') in 0.010953 seconds 
+  Time since last request: 0.000494 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/FistAttack_Mixed_AO.png
+  artifactKey: Guid(3dc908b56615dc64a89f48600e5e9761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/FistAttack_Mixed_AO.png using Guid(3dc908b56615dc64a89f48600e5e9761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71fa2b6adf7f0ff634621d562d85719d') in 0.034418 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/M_CharacterModel/Enemysolder1/Animation/Punching.fbx
-  artifactKey: Guid(68bb26702ea61ad4b9d7f4dd5eb5820e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_CharacterModel/Enemysolder1/Animation/Punching.fbx using Guid(68bb26702ea61ad4b9d7f4dd5eb5820e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca847e960fe20379aa006bf2169d104e') in 0.011121 seconds 
+  Time since last request: 0.000310 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/pants_Height.png
+  artifactKey: Guid(4b7e672d5e06415419178b2be4c82d3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/pants_Height.png using Guid(4b7e672d5e06415419178b2be4c82d3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '885d9f81dff69597410db2962c1cb809') in 0.020282 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/M_CharacterModel/Enemysolder1
-  artifactKey: Guid(10c7d821a748e9d40b018dd0390764c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_CharacterModel/Enemysolder1 using Guid(10c7d821a748e9d40b018dd0390764c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f639b3def5ff6fb1cd404b8939efc563') in 0.007152 seconds 
+  Time since last request: 0.000435 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/HAt and boost_Metallic.png
+  artifactKey: Guid(be161d4b6193c6a41af5634a6be70933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/HAt and boost_Metallic.png using Guid(be161d4b6193c6a41af5634a6be70933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a51c5ff52f56f1fdd4cf57140a10600') in 0.022374 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000345 seconds.
-  path: Assets/M_CharacterModel/Enemysolder1/Soolder.fbx
-  artifactKey: Guid(f7ec7149e7792d54c9c9bdefcd32a165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_CharacterModel/Enemysolder1/Soolder.fbx using Guid(f7ec7149e7792d54c9c9bdefcd32a165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74d7e1ff52ed8e68fc89057e0324cd18') in 0.308305 seconds 
+  Time since last request: 0.000225 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/FistAttack_Metallic.png
+  artifactKey: Guid(a5f7dc96b081ea44bafb503af49865d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/FistAttack_Metallic.png using Guid(a5f7dc96b081ea44bafb503af49865d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34a6b58344d8470fd87caee51236e0f7') in 0.019415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/body_Normal_OpenGL.png
+  artifactKey: Guid(265cecd11f56b8144bfe53ea7e7caff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/body_Normal_OpenGL.png using Guid(265cecd11f56b8144bfe53ea7e7caff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c300ad532d3d6d36b16d9315d0173980') in 0.022033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/HAt and boost_Normal.png
+  artifactKey: Guid(9f717b84f7e2c1848a4fdb064d98bc1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/HAt and boost_Normal.png using Guid(9f717b84f7e2c1848a4fdb064d98bc1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60941d77cbcb8534c39d50139a2d544a') in 0.019700 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/FistAttack_Emissive.png
+  artifactKey: Guid(f3e46e10f1fdd424c8382b7be3d07a4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/FistAttack_Emissive.png using Guid(f3e46e10f1fdd424c8382b7be3d07a4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bf567f2d544b61ccb8ec535c6431955') in 0.019073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/FistAttack_Base_Color.png
+  artifactKey: Guid(655f9d6a8a9268340a2feb4f151f16f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/FistAttack_Base_Color.png using Guid(655f9d6a8a9268340a2feb4f151f16f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7591723affe3bd980027bcc25ffed742') in 0.020530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/smallepart_Emissive.png
+  artifactKey: Guid(bdd15adaa09d39e4ba2b75d5e95ad35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/smallepart_Emissive.png using Guid(bdd15adaa09d39e4ba2b75d5e95ad35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8212b3062d8d048946435a3a53c50168') in 0.016047 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000293 seconds.
-  path: Assets/M_CharacterModel/Enemysolder1/Animation/Punching (1).fbx
-  artifactKey: Guid(a695a20e38022c44f8a0733b8d788f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_CharacterModel/Enemysolder1/Animation/Punching (1).fbx using Guid(a695a20e38022c44f8a0733b8d788f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4243f075999f286cd5f3c6d8a27cc522') in 0.011632 seconds 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 3.08 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 71.9 MB.
-System memory in use after: 72.0 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1960.
-Total: 3.887000 ms (FindLiveObjects: 0.168200 ms CreateObjectMapping: 0.107200 ms MarkObjects: 3.589500 ms  DeleteObjects: 0.021400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  path: Assets/M_CharacterModel/Enemysolder1/Material/body_Roughness.png
+  artifactKey: Guid(eaf2b3625a042644ea81a744378d23f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/body_Roughness.png using Guid(eaf2b3625a042644ea81a744378d23f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98119414c75ac0c008a22f0db7107e9f') in 0.022173 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.371110 seconds.
-  path: Assets/M_CharacterModel/Enemysolder1/Animation/Hit Reaction.fbx
-  artifactKey: Guid(d6cf688d965dae546b360654470e7b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_CharacterModel/Enemysolder1/Animation/Hit Reaction.fbx using Guid(d6cf688d965dae546b360654470e7b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '002df5f6459434482b340ef681ecc84e') in 0.014471 seconds 
+  Time since last request: 0.000303 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/pants_Mixed_AO.png
+  artifactKey: Guid(f347947c1c0dcff408549d187d1f6931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/pants_Mixed_AO.png using Guid(f347947c1c0dcff408549d187d1f6931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0e99a2461a9cbe134d3b4e27e75db77') in 0.036589 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000321 seconds.
-  path: Assets/M_CharacterModel/Enemysolder1/Animation/Running.fbx
-  artifactKey: Guid(f26eb50a0d780ea439050b32f240fdec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_CharacterModel/Enemysolder1/Animation/Running.fbx using Guid(f26eb50a0d780ea439050b32f240fdec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed8211a52ef66e3cc882b9cffe654c11') in 0.009840 seconds 
+  Time since last request: 0.000324 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/Hat.mat
+  artifactKey: Guid(2e55c0ed2502f1541850bd8e40ce4141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/Hat.mat using Guid(2e55c0ed2502f1541850bd8e40ce4141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd266140975b0849043e9ad0d7b190d19') in 0.080645 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.382017 seconds.
-  path: Assets/M_CharacterModel/Enemysolder1/Animation/Running.fbx
-  artifactKey: Guid(f26eb50a0d780ea439050b32f240fdec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_CharacterModel/Enemysolder1/Animation/Running.fbx using Guid(f26eb50a0d780ea439050b32f240fdec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91c7c604b8f0df226245b10a4c632347') in 0.008825 seconds 
+  Time since last request: 0.000246 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/smallepart_Height.png
+  artifactKey: Guid(ead859ade2f5b814bb7c0bc080178806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/smallepart_Height.png using Guid(ead859ade2f5b814bb7c0bc080178806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36a2375b57aba0e9d549e8bfd80220eb') in 0.017401 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.034824 seconds.
-  path: Assets/M_CharacterModel/Enemysolder1/Animation/Running.fbx
-  artifactKey: Guid(f26eb50a0d780ea439050b32f240fdec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_CharacterModel/Enemysolder1/Animation/Running.fbx using Guid(f26eb50a0d780ea439050b32f240fdec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f34bd702228d4a0609ac388da5abb8d3') in 0.006565 seconds 
+  Time since last request: 0.000264 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/pants_Roughness.png
+  artifactKey: Guid(5a4bb3541530e6441a157d3436c3608a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/pants_Roughness.png using Guid(5a4bb3541530e6441a157d3436c3608a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef0443205e3978435c27eb3fb3338aba') in 0.019641 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.508330 seconds.
-  path: Assets/M_CharacterModel/Enemysolder1/Animation/Hit Reaction.fbx
-  artifactKey: Guid(d6cf688d965dae546b360654470e7b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_CharacterModel/Enemysolder1/Animation/Hit Reaction.fbx using Guid(d6cf688d965dae546b360654470e7b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8635128c121629659ffd510d0b58f568') in 0.008089 seconds 
+  Time since last request: 0.000271 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/HAt and boost_Mixed_AO.png
+  artifactKey: Guid(eef1b60110f65e44ca680e0739590029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/HAt and boost_Mixed_AO.png using Guid(eef1b60110f65e44ca680e0739590029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26d7060e7adc5c3d2e90c0c94b5d432b') in 0.030332 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 30.069450 seconds.
-  path: Assets/M_Tool/Oil
-  artifactKey: Guid(9274fa2528e01c740b6a804418202ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_Tool/Oil using Guid(9274fa2528e01c740b6a804418202ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95b8756a4c2be84e5e5e0406abc9cd9f') in 0.010985 seconds 
+  Time since last request: 0.000248 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/pants_Base_Color.png
+  artifactKey: Guid(56420f50053622b48b2928618fa7d9bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/pants_Base_Color.png using Guid(56420f50053622b48b2928618fa7d9bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bb0b6917ae414d5acbb454d3976f1db') in 0.019518 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.305862 seconds.
-  path: Assets/M_Tool/Oil/oil.fbx
-  artifactKey: Guid(7a95cf77c06c7f848b3bb9ec09efd155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_Tool/Oil/oil.fbx using Guid(7a95cf77c06c7f848b3bb9ec09efd155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b0d6c88cbed462df460288a2e53ab65') in 0.054871 seconds 
+  Time since last request: 0.000351 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/body_Metallic.png
+  artifactKey: Guid(88f8fd66fdd1c964cb2e0b761a336b9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/body_Metallic.png using Guid(88f8fd66fdd1c964cb2e0b761a336b9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3656f4a64655416c772cdd02b30a8643') in 0.016881 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000341 seconds.
-  path: Assets/M_Tool/Oil/oil_Height.png
-  artifactKey: Guid(59d06aff929e8d648a3eec9d8f0f40f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_Tool/Oil/oil_Height.png using Guid(59d06aff929e8d648a3eec9d8f0f40f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4daadf763b4bb1baca8723584923678') in 0.050056 seconds 
+  Time since last request: 0.000243 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/body_Normal.png
+  artifactKey: Guid(e308eeb0f98ffc245941ab969c78fb8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/body_Normal.png using Guid(e308eeb0f98ffc245941ab969c78fb8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2af30ee72594f6216e6c50dfb6a4b3f8') in 0.015338 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000298 seconds.
-  path: Assets/M_Tool/Oil/oil_Base_Color.png
-  artifactKey: Guid(526f6796148e08e4ea139142f2f8a4cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_Tool/Oil/oil_Base_Color.png using Guid(526f6796148e08e4ea139142f2f8a4cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fe808865e96cc52384d9836af156a98') in 0.018866 seconds 
+  Time since last request: 0.000259 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/HAt and boost_Normal_OpenGL.png
+  artifactKey: Guid(0c394705e5cd44a4891ee79c15c7855e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/HAt and boost_Normal_OpenGL.png using Guid(0c394705e5cd44a4891ee79c15c7855e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59d807cd4729ba499c1b868250aabb83') in 0.018548 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/M_Tool/Oil/oil_Mixed_AO.png
-  artifactKey: Guid(f6dadbf8f1834bb40bb36c6caf247c8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_Tool/Oil/oil_Mixed_AO.png using Guid(f6dadbf8f1834bb40bb36c6caf247c8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f3c25d7e0c6e14151f59e0d6be23ea3') in 0.016963 seconds 
+  Time since last request: 0.000305 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/HAt and boost_Base_Color.png
+  artifactKey: Guid(218eeed92253146439bdf6094b389cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/HAt and boost_Base_Color.png using Guid(218eeed92253146439bdf6094b389cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9edf3e40189936f2b938f44bd2e561b4') in 0.016862 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/M_Tool/Oil/oil_Metallic.png
-  artifactKey: Guid(8cf4d4e0726ae0545a89d26b2420099a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_Tool/Oil/oil_Metallic.png using Guid(8cf4d4e0726ae0545a89d26b2420099a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a89b54e52e774c5935254634df5b55f6') in 0.017705 seconds 
+  Time since last request: 0.000301 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/BOdy.mat
+  artifactKey: Guid(1abb077a4537ee34f9876a9c928f0579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/BOdy.mat using Guid(1abb077a4537ee34f9876a9c928f0579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '349e4a638215700c4615fa8d44ab3073') in 0.040463 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/M_Tool/Oil/oil_Roughness.png
-  artifactKey: Guid(7251ecf30120dde4d8d7f4f06e8c6492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_Tool/Oil/oil_Roughness.png using Guid(7251ecf30120dde4d8d7f4f06e8c6492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38d370063e2d6b44c5d51d5c387bbebe') in 0.030732 seconds 
+  Time since last request: 0.000603 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/HAt and boost_Height.png
+  artifactKey: Guid(213cb90531db0f84894516054c19f1c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/HAt and boost_Height.png using Guid(213cb90531db0f84894516054c19f1c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '245fd14553105bea00596f124f487e34') in 0.018812 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000287 seconds.
-  path: Assets/M_Tool/Oil/oil_Normal.png
-  artifactKey: Guid(9b86068d351c30545bd256bef8e5a88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_Tool/Oil/oil_Normal.png using Guid(9b86068d351c30545bd256bef8e5a88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c58629be5bcbfb71f59f7ada9c6bc639') in 0.017883 seconds 
+  Time since last request: 0.000273 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/body_Mixed_AO.png
+  artifactKey: Guid(10ac4a328c796d940afe2f23ae7e10d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/body_Mixed_AO.png using Guid(10ac4a328c796d940afe2f23ae7e10d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d7d69bf54e42de9babd4d6011eb6ee8') in 0.017493 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000237 seconds.
-  path: Assets/M_Tool/Oil/oil_Emissive.png
-  artifactKey: Guid(2cb346db8d089d445b8482dd3f81f801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_Tool/Oil/oil_Emissive.png using Guid(2cb346db8d089d445b8482dd3f81f801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c579861b6dd54f2830aecb46aa6300e3') in 0.018346 seconds 
+  Time since last request: 0.000217 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/body_Base_Color.png
+  artifactKey: Guid(c3a2cc44c528edd498f72bda3707ea0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/body_Base_Color.png using Guid(c3a2cc44c528edd498f72bda3707ea0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce567a6a2585cd5aeb7b742a0caecadb') in 0.015037 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000286 seconds.
-  path: Assets/M_Tool/Oil/oil_Normal_OpenGL.png
-  artifactKey: Guid(46a1c597d3f79c244a8c2a59cc2490c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_Tool/Oil/oil_Normal_OpenGL.png using Guid(46a1c597d3f79c244a8c2a59cc2490c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6de4e5878acded1f34601aabec00fb7a') in 0.018492 seconds 
+  Time since last request: 0.000226 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/FistAttack_Normal.png
+  artifactKey: Guid(ca81df0542302a244b4f356223925317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/FistAttack_Normal.png using Guid(ca81df0542302a244b4f356223925317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55703fa7b8deb2f8cc7e391f1a6c7ae7') in 0.020244 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.190366 seconds.
-  path: Assets/M_Tool/Oil/Oil_MT.mat
-  artifactKey: Guid(1e3d7f320b726ca48b02e149f0cda169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_Tool/Oil/Oil_MT.mat using Guid(1e3d7f320b726ca48b02e149f0cda169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91fd06f23371305c358c5b5fc735cfe6') in 0.034077 seconds 
+  Time since last request: 0.000254 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/smallepart_Base_Color.png
+  artifactKey: Guid(c30ea4940a288644f9c87a4d242b8f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/smallepart_Base_Color.png using Guid(c30ea4940a288644f9c87a4d242b8f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff78b5632ab59d4a8754c3aa2f1f81bb') in 0.016952 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 30.913736 seconds.
-  path: Assets/M_Tool/Oil/Oil_MT.mat
-  artifactKey: Guid(1e3d7f320b726ca48b02e149f0cda169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_Tool/Oil/Oil_MT.mat using Guid(1e3d7f320b726ca48b02e149f0cda169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c25d70442d72de7ccc3ba226ffd5a49f') in 0.067223 seconds 
+  Time since last request: 0.000244 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/Pants.mat
+  artifactKey: Guid(7dbffdcbec294d64bb3d336029331a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/Pants.mat using Guid(7dbffdcbec294d64bb3d336029331a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '525a7839ab6314fcb20c905a2fae71bf') in 0.031359 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.541236 seconds.
-  path: Assets/M_Tool/Oil/oil_Normal_OpenGL.png
-  artifactKey: Guid(46a1c597d3f79c244a8c2a59cc2490c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_Tool/Oil/oil_Normal_OpenGL.png using Guid(46a1c597d3f79c244a8c2a59cc2490c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '450af649a819b8e288beb465d321a50a') in 0.045776 seconds 
+  Time since last request: 0.000373 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/FistAttack_Normal_OpenGL.png
+  artifactKey: Guid(412f0dc3182430142a1dd62cc9ffa22e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/FistAttack_Normal_OpenGL.png using Guid(412f0dc3182430142a1dd62cc9ffa22e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4513fcc9a8be105c4bdfb21f173a298b') in 0.024406 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.546931 seconds.
-  path: Assets/M_Tool/Oil/oil.fbx
-  artifactKey: Guid(7a95cf77c06c7f848b3bb9ec09efd155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/M_Tool/Oil/oil.fbx using Guid(7a95cf77c06c7f848b3bb9ec09efd155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a5152fbc5fd301296a398dc30b1d907') in 0.064336 seconds 
+  Time since last request: 0.000265 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Material/smallepart_Metallic.png
+  artifactKey: Guid(0402a0427648e6c42be30a0329db2372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Material/smallepart_Metallic.png using Guid(0402a0427648e6c42be30a0329db2372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd2b09b0d7f638cf97cc3c7ca01e44f0') in 0.033878 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 22.261190 seconds.
-  path: Assets/Graphics/9-92984_transparent-crosshairs-png-transparent-background-crosshair-png-png.png
-  artifactKey: Guid(a1a3f1e87efa7884abc9b780cc5a8bb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Graphics/9-92984_transparent-crosshairs-png-transparent-background-crosshair-png-png.png using Guid(a1a3f1e87efa7884abc9b780cc5a8bb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f2687726247c2299059c380edd09ff') in 0.042396 seconds 
+  Time since last request: 0.159333 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Animation/Punch Combo.fbx
+  artifactKey: Guid(aa06dcdd569600c45a1e48c0cef7b217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Animation/Punch Combo.fbx using Guid(aa06dcdd569600c45a1e48c0cef7b217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fd2ff57d43ff70461e1fb7ba7f57d9d') in 0.022740 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/Graphics/SW-TAICHIWOOD.jpg
-  artifactKey: Guid(fc305628de004ed4080cfb9b7674925f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Graphics/SW-TAICHIWOOD.jpg using Guid(fc305628de004ed4080cfb9b7674925f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a71b7b5813866c328eca6f27de16c13') in 0.037534 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.489394 seconds.
-  path: Assets/Graphics/1104_1.jpg
-  artifactKey: Guid(7d278a07904b6604da455a70f595169c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Graphics/1104_1.jpg using Guid(7d278a07904b6604da455a70f595169c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '866f4427d6101d13d937bf32187aec6f') in 0.031133 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 63.983523 seconds.
-  path: Assets/Graphics/1104_1.jpg
-  artifactKey: Guid(7d278a07904b6604da455a70f595169c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Graphics/1104_1.jpg using Guid(7d278a07904b6604da455a70f595169c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3173260861c6261f22bd442cf2be2b13') in 0.041466 seconds 
+  Time since last request: 18.667393 seconds.
+  path: Assets/M_CharacterModel/Enemysolder1/Animation/Punch Combo.fbx
+  artifactKey: Guid(aa06dcdd569600c45a1e48c0cef7b217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_CharacterModel/Enemysolder1/Animation/Punch Combo.fbx using Guid(aa06dcdd569600c45a1e48c0cef7b217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e1b76834e5e81a8131e1e22c5f3c5e4') in 0.007899 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005238 seconds.
+Registered in 0.003741 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.656 seconds
+- Completed reload, in  1.299 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1657ms)
-		BeginReloadAssembly (193ms)
+	ReloadAssembly (1300ms)
+		BeginReloadAssembly (154ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (53ms)
-		EndReloadAssembly (1361ms)
-			LoadAssemblies (152ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1067ms)
+			LoadAssemblies (113ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (578ms)
+			SetupTypeCache (348ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (68ms)
-			SetupLoadedEditorAssemblies (391ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (334ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (11ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (78ms)
-				ProcessInitializeOnLoadAttributes (282ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (15ms)
-				EditorAssembliesLoaded (1ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (221ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (22ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1473 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 135.6 MB.
-System memory in use after: 135.7 MB.
+Unloading 1491 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 188.2 MB.
+System memory in use after: 188.3 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2194.
-Total: 3.991100 ms (FindLiveObjects: 0.259400 ms CreateObjectMapping: 0.120200 ms MarkObjects: 3.592400 ms  DeleteObjects: 0.017500 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2429.
+Total: 3.305700 ms (FindLiveObjects: 0.202700 ms CreateObjectMapping: 0.108700 ms MarkObjects: 2.966600 ms  DeleteObjects: 0.026700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
