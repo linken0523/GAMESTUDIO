@@ -1238,8 +1238,8 @@ MonoBehaviour:
   attackDmg: 1
   DeathDepth: -5
   AttackCoolDownTime: 1
-  DeathAnimationCoolDownTime: 1.5
-  DamageAnimationCoolDownTime: 0.5
+  DeathAnimationCoolDownTime: 2
+  DamageAnimationCoolDownTime: 0.1
   AttackAnimationCoolDownTime: 0.5
   maxHealth: 20
   health: 20

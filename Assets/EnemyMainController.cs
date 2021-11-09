@@ -145,7 +145,7 @@ public class EnemyMainController : MonoBehaviour
                         if (EnemyMove != null) // if enemy has move component
                         {   
                             if(EnemyAnimation != null){
-                                //EnemyAnimation.AfterAttack();
+                                EnemyAnimation.AfterAttack();
                             }
                             // print(this.gameObject.name+" will now move towards player.");
                             moved = EnemyMove.moveToPlayer(moveSpeed, attackRange);

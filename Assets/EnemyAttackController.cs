@@ -59,7 +59,7 @@ public class EnemyAttackController : MonoBehaviour
         
         if (DistanceToPlayer <= attackRange && AttackCoolDown == null)
         {   
-            //print(this.gameObject.name+" Parent--Attack()");
+            print(this.gameObject.name+" Parent--Attack()");
             AttackCoolDown = new HandyCoolDown(AttackCoolDownTime, "Enemy Attack");
             attackLogic(damage, player);
             return true;

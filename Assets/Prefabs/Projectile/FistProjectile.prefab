@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  pushForce: 100
+  pushForce: 200
   destroyRange: 50
 --- !u!135 &7553269733682812916
 SphereCollider:
