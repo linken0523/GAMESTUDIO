@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyDamageManage : MonoBehaviour
 {   
     public GameObject createOnDamaged;
+
     public AudioClip shootSound;
     void OnTriggerEnter(Collider other) {
         if (other.gameObject.tag == "Damage"){ // player projectile
@@ -16,12 +17,12 @@ public class EnemyDamageManage : MonoBehaviour
             this.GetComponent<EnemyMainController>().enemyIsDamaged(pushForce, damage, dir);
 
             Destroy(other.gameObject);
+            
 
             
             if (createOnDamaged != null)
             {
-                GameObject obj = Instantiate(this.createOnDamaged);
-                obj.transform.position = this.transform.position;
+                GameObject obj = Instantiate(this.createOnDamaged, transform.position + 1.5f *Vector3.up , Quaternion.identity);
             }
             
             if (shootSound != null) 
