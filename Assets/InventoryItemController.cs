@@ -18,10 +18,10 @@ public class InventoryItemController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.F)){
+        /*if(Input.GetKeyDown(KeyCode.F)){
             Console.WriteLine("This is C#");
             dropItem();
-        }
+        }*/
     }
     public void dropItem(){
         var item = itemObject.GetComponent<Item>();

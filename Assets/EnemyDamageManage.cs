@@ -10,13 +10,16 @@ public class EnemyDamageManage : MonoBehaviour
     void OnTriggerEnter(Collider other) {
         if (other.gameObject.tag == "Damage"){ // player projectile
             ProjectileManager bullet = other.gameObject.GetComponent<ProjectileManager>();
-            float pushForce = bullet.getPushForce();
-            float damage = bullet.getDamage();
-            Vector3 dir = bullet.getVelocity();
+            if(bullet){
+                float pushForce = bullet.getPushForce();
+                float damage = bullet.getDamage();
+                Vector3 dir = bullet.getVelocity();
             
-            this.GetComponent<EnemyMainController>().enemyIsDamaged(pushForce, damage, dir);
+                this.GetComponent<EnemyMainController>().enemyIsDamaged(pushForce, damage, dir);
 
             Destroy(other.gameObject);
+            }
+            
             
 
             

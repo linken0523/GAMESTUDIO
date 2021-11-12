@@ -42,7 +42,7 @@ public class PlayerMoveController : MonoBehaviour
                 playerMovement += new Vector3(-1f, 0f, 0f);
             }
 
-            transform.Translate(playerMovement.normalized * Speed * Time.deltaTime);
+            transform.position += (playerMovement.normalized * Speed * Time.deltaTime);
             return true;
         }else{
             return false;

@@ -29,15 +29,9 @@ public class PlayerAttackController : MonoBehaviour
     public bool attack(float attackRange, float attackDamage,float AttackCoolDownTime)
     {   
         Vector3 playerPos = this.transform.position;
-        Ray rayOrigin = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hitInfo;
-        Vector3 dir = transform.forward;
-        if(Physics.Raycast(rayOrigin, out hitInfo)){
-            if(hitInfo.collider!=null){
-                dir = (hitInfo.point - (transform.position + Vector3.up)).normalized;
-
-            }
-        }
+        Vector3 dir = transform.rotation * Vector3.forward;
+        
+        
 
         if (Input.GetMouseButtonDown(0)) {
             
@@ -50,7 +44,7 @@ public class PlayerAttackController : MonoBehaviour
 
             // instantiate projectile
             Vector3 bulletInsPos = transform.position + Vector3.up;
-            GameObject bullet = Instantiate(ProjectileTemplate, bulletInsPos , transform.rotation);
+            GameObject bullet = Instantiate(ProjectileTemplate, bulletInsPos+2*transform.forward , transform.rotation);
             ProjectileManager bulletManage = bullet.gameObject.GetComponent<ProjectileManager>();
             bulletManage.setVelocity(dir);
             bulletManage.setDamage(attackDamage);

@@ -18,7 +18,7 @@ public class playerRotationScript : MonoBehaviour
     private float facingNW; // left + up
     private float rotation;
 
-    private float rotateSpeed = 8f;
+    private float rotateSpeed = 3f;
     // Start is called before the first frame update
     public GameObject parent;
     void Start()
@@ -49,12 +49,9 @@ public class playerRotationScript : MonoBehaviour
     float determineRotation()
     {
 
-        faceOrientation = transform.localEulerAngles.y;
+        faceOrientation = transform.eulerAngles.y;
 
 
-        if(Input.GetMouseButton(0)){
-            return facingN-faceOrientation;
-        }
         // strange case of pressing two together...
         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D))
         {

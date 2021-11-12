@@ -108,7 +108,7 @@ public class EnemyMainController : MonoBehaviour
         {   // if death cool down is initiated
             // it's dead... just use cool down to wait for animation
             // then destroy itself
-            
+            EnemyAttack.attack(0, attackRange);
             bool done = DeathCoolDown.check();
             if (done)
             {   
@@ -116,6 +116,7 @@ public class EnemyMainController : MonoBehaviour
                 // print(this.gameObject.name+" is destroyed.");
                 EnemyDeath.destroySelf();
             }
+            
         }
 
         // i know this is weird doing this condition again
@@ -130,9 +131,10 @@ public class EnemyMainController : MonoBehaviour
                 playerIsFound = EnemyAttack.playerInSearchRange(searchRange);
                 if (playerIsFound)
                 {  
-                    EnemyMove.calculateDir();
-                    EnemyMove.rotate(); // face playerEnemyMove.rotate(); // face player
-                    
+                    if(EnemyMove){
+                        EnemyMove.calculateDir();
+                        EnemyMove.rotate(); // face playerEnemyMove.rotate(); // face player
+                    }
                     //print(this.gameObject.name+" has found player.");
                     doAttack = EnemyAttack.attack(attackDmg, attackRange);
                     // animation:
