@@ -78,11 +78,11 @@ public class EnemyAnimationController : MonoBehaviour
         AttackCoolDown = new HandyCoolDown(AttackAnimationCoolDownTime, this.gameObject.name+" Attack Animation");
         if (animator) {
             animator.SetBool(key_isAttack, true);
-            //animator.SetBool(key_isWalk, false);
+            animator.SetBool(key_isWalk, false);
         } else {
             animator = this.GetComponent<Animator>();
             animator.SetBool(key_isAttack, true);
-            //animator.SetBool(key_isWalk, false);
+            animator.SetBool(key_isWalk, false);
         }
     }
 

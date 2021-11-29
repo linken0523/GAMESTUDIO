@@ -14,16 +14,21 @@ public class PlayerAttackController : MonoBehaviour
        - enemyNearby
        - setDistanceToPlayer()
     */
-    public GameObject ProjectileTemplate;
+    
     private HandyCoolDown AttackCoolDown;
 
 
     private bool hasAttacked;
     public AudioClip shootSound;
-
+    public GameObject weaponOne;
+    public GameObject weaponTwo;
+    private int weaponNumber = 1;
     void Start() {
         hasAttacked = false;
         AttackCoolDown = null;
+        weaponOne.SetActive(true);
+        weaponTwo.SetActive(false);
+        weaponNumber = 1;
     }
 
     public bool attack(float attackRange, float attackDamage,float AttackCoolDownTime)
@@ -38,16 +43,16 @@ public class PlayerAttackController : MonoBehaviour
         
             // calculate direction vector for projectile
             
-            
-
+            if(weaponNumber==1){
+                weaponOne.GetComponent<FistGunLogic>().shoot(attackRange, attackDamage, dir, transform.forward, transform.rotation);
+            }
+            if(weaponNumber==2){
+                weaponTwo.GetComponent<CannonLogic>().shoot(attackRange, attackDamage, dir, transform.forward, transform.rotation);
+            }
             
 
             // instantiate projectile
-            Vector3 bulletInsPos = transform.position + Vector3.up;
-            GameObject bullet = Instantiate(ProjectileTemplate, bulletInsPos+2*transform.forward , transform.rotation);
-            ProjectileManager bulletManage = bullet.gameObject.GetComponent<ProjectileManager>();
-            bulletManage.setVelocity(dir);
-            bulletManage.setDamage(attackDamage);
+            
             // set cool down, control player attack rate
             
             AttackCoolDown = new HandyCoolDown(AttackCoolDownTime, "Player Attack Cool Down");
@@ -67,6 +72,21 @@ public class PlayerAttackController : MonoBehaviour
             bool done = AttackCoolDown.check();
             if (done) {
                 AttackCoolDown = null;
+            }
+        }
+        if(Input.GetKeyDown(KeyCode.X)){
+            weaponNumber+=1;
+            if(weaponNumber==3){
+                weaponNumber=1;
+            }
+            if(weaponNumber==1){
+                weaponOne.SetActive(true);
+                weaponTwo.SetActive(false);
+            }
+            if(weaponNumber==2){
+                
+                weaponOne.SetActive(false);
+                weaponTwo.SetActive(true);
             }
         }
     }
